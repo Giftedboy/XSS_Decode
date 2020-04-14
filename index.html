@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="./index.js"></script>
+        <style>
+            .content,.method,.result,.text,.operator,.type,.forward{
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="top">
+            <div class="content">
+                <textarea name="" id="text_input" cols="75" rows="10"></textarea>
+            </div>
+            <br>
+            <div class="method">
+                <form>
+                    <label><input type="radio" name="sex" value="1" checked>编码</label>
+
+                    <label><input type="radio" name="sex" value="2">解码</label>
+                </form>
+            </div>
+            <br>
+            <div class="type">
+                <button class="btn" onclick="ASCII_()">ASCII</button>
+                <button class="btn" onclick="URL_E()">URL</button>
+                <button class="btn" onclick="HTML_10()">HTML 10 HEX</button>
+                <button class="btn" onclick="HTML_16()">HTML 16 HEX</button>
+                <button class="btn" onclick="JSUnicode()">JSUnicode</button>
+                <button class="btn" onclick="JS_8()">JS 8 HEX</button>
+                <button class="btn" onclick="JS_16()">JS 16 HEX</button>
+                <button class="btn" onclick=" CSS_E()">CSS</button>
+            </div>
+            <br>
+            <div class="result">
+
+                <textarea name="" id="text_output" cols="75" rows="10"></textarea>
+            </div>
+            <div class="forward">
+                <button class="btn" onclick="Replace()">替换</button>
+            </div>
+
+        </div>
+        <br>
+
+        <div class="buttom">
+            <div class="text">
+                <textarea name="" cols="75" rows="10" id="tex"></textarea>
+            </div>
+            <div class="operator">
+                <button onclick="COPY()">COPY</button>
+                <button onclick="DEL()">DEL</button>
+                <button onclick="PreviousStep()">上一步</button>
+                <button onclick="NextStep()">下一步</button>
+            </div>
+        </div>
+        <br>
+        <br>
+    <div style="width: 150px;float: left;position: absolute;left: 30px;top: 130px;">
+        功能简介：XSS中常见编码解码功能，其中替换按钮能快速将第三个文本框中对应第一个框的待处理文本实现编码解码后的替换
+        <br>
+        改进意见或者提出新功能新点子请Connect me:   QQ:2309896923
+        <br>
+        暂不支持中文编/解码。
+    </div>
+    </body>
+</html>
